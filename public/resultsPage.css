@@ -1,0 +1,519 @@
+/* div#tm-top-bar{
+    height: auto;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+/* div#tm-top-bar>div.container{
+    height: auto;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 8px 16px 45px;
+} */
+
+/* .top-left-container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+} */
+/* a.navbar-brand.mr-auto{
+    display: flex;
+    margin-right: 6rem;
+} */
+/* logo image */
+/* nav>a>img.logoImage{
+    width:2rem;
+    height:2rem;
+} */
+/* #top{
+    background-image: url('img/results-background.jpg');
+} */
+.top-left-container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logoImage{
+    width:50px;
+    margin-right:10px;
+}
+.logoText{
+    margin: 0;
+    font-size: 16px;
+}
+.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link { padding: 50px 35px; }
+.tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link { padding: 30px 35px; }
+.tm-top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 120px;
+    background: white;
+}
+.tm-top-bar-bg{height: 119px;}
+
+.navbar-brand {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.navbar-expand-lg.narbar-light{
+    margin: 0 0 0 -14rem;
+    padding: 0 0;
+}
+
+a.navbar-brand.mr-auto{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navbar{
+width:100%;
+padding-top: 0;
+padding-bottom: 0;
+padding-left: 16px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar-brand{
+    display: inline-block;
+    line-height: inherit;
+    padding: 0.3125rem, 0;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: 700;
+    }
+li.nav-item{
+    border-left:1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+/* holds both image and results  */
+section.imageAndResultsContainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+/* container holding image */
+section.imageSection{
+    border-style: none;
+    width:36%;
+    margin-left: 21rem;
+    
+}
+/* image itself */
+section.imageSection>section>img.image{
+    width:30%;
+    margin: 0 10rem;
+}
+
+section.imageAndResultsContainer>section.resultsContainer{
+    width:60%;
+}
+
+
+
+div#mainNav{
+    padding: 0 0 0 10rem ;
+    margin: 0 0 0 2rem ;
+    
+    }
+
+.tm-position-relative{
+    position: relative;
+}
+.tm-section{
+    min-height: 21px;
+}
+#tm-section-1 {	
+	background-image: url('../img/amethyst.jpg');	
+	height:2px;
+    border: solid #ee5057 28px;
+}
+.tm-bg-img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*StoneTitle */
+h1.userResultsTitle{
+    margin: 2rem 0 1rem 21rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.tm-section-2{
+    background-color: #ee5057;
+    padding-top: 50px;
+    position: relative;
+}
+
+.tm-section-down-arrow{
+    position:absolute;
+    top:0px;
+    width: 100%;
+    height: 100px;
+}
+svg:not(:root){
+    overflow: hidden;
+}
+
+.container{
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+section>ul.dayPlanetStone{
+    background-color: #ee5057;
+    margin: 9rem 0 0 1rem;
+    width: 15rem;
+    height: 10rem;
+    align-items: center;
+} 
+li.text-capitalize{
+    list-style: none;
+    margin: 18px 21px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (max-width: 991px) {
+	.tm-top-bar.active, .tm-top-bar, .tm-top-bar-bg { height: 65px; }
+	.tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link,
+	.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
+	    padding: 12px 15px;
+	}
+}
+
+
+@media(min-width: 992px){
+.container{max-width:960px;}
+}
+
+@media(min-width: 768px){
+.container{max-width: 720px;}
+}
+
+@media(min-width: 576px){
+.container{max-width:540px;}
+}
+
+.tm-pb-4{
+    padding-bottom: 100px;
+}
+.tm-pt-5{
+    padding-top:150px;
+}
+
+#tm-section-6{
+    background-image: url("../img/planets.jpg");
+    background-position: top center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 524px){
+.tm-section-pad {
+    padding: 25px 15px;
+}
+}
+
+
+section.stoneCharacteristics{
+    margin: 1rem 0 0 0;
+    width: 80%;
+    height:50px;
+}
+
+section.stoneCharacteristics>.stoneMeaningText{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 0 4rem 0; 
+}
+section.stoneCharacteristics>.stoneMeaningText>h2{
+    margin: 0 0 1rem 0;
+}
+
+section.stoneCharacteristics>section.healingPropertiesText{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2rem 0 0 0;
+}
+section.stoneCharacteristics>.healingPropertiesText>h2{
+    margin: 0 0 1rem 0;
+}
+
+
+#mainPageButton{
+    margin:15rem 0 2rem 0;
+}
+
+div.groupOfArticles{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+div.container-bottom{
+    display:block;
+    width:100%
+}
+div.container-bottom>div.column{
+    display: block;
+    justify-content: center;
+}
+div.container-bottom>.secondBox{
+    display: flex;
+    width:100%;
+    justify-content:flex-end;
+}
+
+div.container-bottom>.secondBox>.column1{
+   margin-left: 3rem;  
+}
+
+
+.articlePictures{
+    width:30rem;
+    height:auto;
+    cursor:pointer;
+}
+.articlePictures#chakras{
+    display: flex;
+    justify-content:flex-end;
+}
+
+article.articleTitles{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+article.articleNotes{
+    margin: 2rem 7rem 4rem 0;
+    width:80%;
+    padding-right: 7rem;
+}
+section.goBackToMainPage{
+    width:100%;
+    height: auto;
+    margin: 5rem 0;
+    border-bottom: solid gray;
+}
+
+@media screen and (max-width: 1100px){
+    section.resultsContainer>ul.dayPlanetStone {
+        background-color: #ee5057;
+        margin: 9rem 0 0 5rem;
+        width: 13rem;
+        height: 10rem;
+    }
+    li{
+        list-style: none;
+        margin: 18px 21px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    h1.userResultsTitle{
+        margin:2rem 0 1rem 10rem;
+    }
+    
+    section.resultsContainer>ul.dayPlanetStone {
+        background-color: #ee5057;
+        margin: 9rem 0 0 5rem;
+        width:15rem;
+        height:10rem;
+    }
+    section.imageSection{
+        border-style: none;
+        width:36%;
+        margin-left:9rem;
+    }
+    }
+
+    @media screen and (max-width: 960px){
+        section.resultsContainer>ul.dayPlanetStone {
+            background-color: #ee5057;
+            margin: 9rem 0 0 9rem;
+            width: 12rem;
+            height: 9rem;
+        }
+        li{
+            list-style: none;
+            margin: 18px 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: small;
+        }
+    }
+
+
+    @media screen and (max-width: 712px){
+        section.resultsContainer>ul.dayPlanetStone {
+            background-color: #ee5057;
+            margin: 9rem 0 0 6rem;
+            width: 9rem;
+            height: 7rem;
+        }
+        li{
+            list-style: none;
+            margin: 18px 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:x-small;
+        }
+        .imageSection>.image{
+            width:20rem;
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+       
+        .imageSection>.image{
+            width:15rem;
+            height: auto;
+        }
+        li{
+            list-style: none;
+            margin: 18px 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:x-small;
+        }
+
+        section.resultsContainer>ul.dayPlanetStone {
+            background-color: #ee5057;
+            margin: 7rem 0 0 5rem;
+            width: 9rem;
+            height: 7rem;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+       
+        .imageSection>.image{
+            width:15rem;
+            height: auto;
+        }
+        li{
+            list-style: none;
+            margin: 9px -18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size:x-small;
+        }
+
+        section.resultsContainer>ul.dayPlanetStone{
+            background-color: #ee5057;
+            margin: 7rem 0 0 5rem;
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+    
+@media screen and (max-width: 768px){
+   section.imageSection{
+    border-style:none;
+    width:47%;
+    margin-left: 3rem;
+    }
+
+    h1.userResultsTitle{
+        margin:2rem 0 1rem 4rem;
+    }
+}
+
+    @media screen and (max-width: 1024px){
+        div#mainNav{
+            margin: 0 0 0 1rem;
+        }
+        }
+
+    @media screen and (max-width: 1440px){
+         #tm-section-1{
+            width:100%;
+        }
+        }
+
+        @media screen and (max-width: 435px){
+            #tm-section-1{
+                width:103%;
+            }
+            section.imageSection{
+                width:47%;
+               margin-left:1rem;
+            }
+            section.imageSection>.image{
+                width:12rem;
+                height:auto;
+            }
+            section.resultsContainer>ul.dayPlanetStone{
+                background-color: #ee5057;
+                margin: 6rem 0 0 3rem;
+                width:6rem;
+                height:6rem;
+
+            }
+            li{
+                list-style: none;
+                margin:8px -11px;
+                font-size:xx-small;
+            }
+        }
+
+
+            @media screen and (max-width: 340px){
+       
+                section.imageSection>.image{
+                    width:8rem;
+                    height: auto;
+                }
+               
+                li{
+                    list-style: none;
+                    margin: 6px -15px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:6px;
+                }
+      
+                section.resultsContainer>ul.dayPlanetStone {
+                    background-color: #ee5057;
+                    margin: 3rem 0 0 3rem;
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            section.goBackToMainPage{
+                margin-top: auto;
+            }
+            #mainPageButton{
+                margin:30rem 0 3rem 0;
+                border-radius: 47%;
+                background: #ee5057;
+            }
+
+            div.container-bottom{
+                margin:2rem 0;
+            }
+        

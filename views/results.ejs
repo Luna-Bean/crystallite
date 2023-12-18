@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/resultsPage.css" />
+</head>
+<body>
+
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar" id="tm-top-bar">
+            <!-- Top Navbar -->
+            <div class="container">
+                <div class="row">
+                     <!-- <section class=" top-left-container siteLogoAndTitle"> 
+                       
+
+                    </section>  -->
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" onclick="mainPage()" >
+                            <img src="img/jewelry.png" alt="Site logo" class="logoImage"onclick="mainPage()" >Crystallite The Way
+                            
+                            
+                            <!-- <p class="fw-bold logoText" onclick="mainPage()" >Crystallite The Way</p> -->
+                        </a>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <ul class="navbar-nav ml-auto">
+                              <li class="nav-item">
+                                <a class="nav-link"  onclick="mainPage()" >Home </span></a>
+                                    <!-- <span class="sr-only"> -->
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#tm-section-4">Shop</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#tm-section-5">Articles</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#tm-section-6">Contact</a>
+                              </li>
+                            </ul>
+                        </div>                            
+                    </nav>            
+                </div>
+            </div>
+        </div>
+        <div class="tm-section tm-bg-img" id="tm-section-1" >
+            <!-- <img src="/public/img/amethyst.jpg" class="img-fluid" alt=""> -->
+           
+        </div>
+
+<h1 class="text-capitalize text-muted userResultsTitle"> <%= user.stone %></h1>
+
+<section class="imageAndResultsContainer">
+    <section class="imageSection">
+        <img class="border border-secondary rounded image" src="<%= transformedImageURL %>">
+    </section>
+
+    <section class="resultsContainer">
+        <ul class="dayPlanetStone text-left border border-primary rounded">
+            <li class="text-capitalize fw-bold">Day: <%= user.day %></li>
+            <li class="text-capitalize fw-bold">Planet: <%= user.planet %> </li>
+            <li class="text-capitalize fw-bold">Stone: <%= user.stone %> </li>   
+        </ul>
+    </section>
+</section>
+
+
+
+<section class="stoneCharacteristics">
+    <section class="stoneMeaningText">
+        <h2 class="text-muted">Stone Meaning</h2>
+        <p class="font-light-weight text-secondary"> <%= user.stoneMeaning %></p>
+    </section>
+    <section class="healingPropertiesText">
+        <h2 class="text-muted"> Healing Properties</h2>
+        <p class="font-light-weight text-secondary"> <%= user.healingProperties %></p>     
+    </section>
+</section>
+
+<section class="goBackToMainPage">
+    <!-- <p class="goBackToMainPage">Go back to main page</p> -->
+    <button type="button" id="mainPageButton" onclick="mainPage()">Main Page</button>
+</section>
+
+<!-- article section -->
+
+<div class="container-bottom">
+    <div class=" fw-bolder fs-1 groupOfArticles">You Might Also Like</div>
+
+    <div class="grid grid--uniform secondBox">
+        <div class="column1">    
+            <div class="articleBox">
+                <img src="img/howtousecrystals.jpg" class="articlePictures" alt="crystals">
+            </div>
+
+            <article class=" fw-bold fs-3 articleTitles"> How To Use Crystals </article>
+            <article class="fs-5 articleNotes">Crystals are not only just beautiful stone created by the Earth but they can also be used everyday for... </article>
+        </div>
+
+        <div class="column">
+            <div class="articleBox">
+                <img src="img/herbalmagic.jpg" class="articlePictures" alt="herbs">
+            </div>
+            <article class="fw-bold fs-3 articleTitles">Guide To Herbal Magic</article>
+            <article class="fs-5 articleNotes">Herbs have been used for centuries for many ailments, spiritual practices and ...</article>
+        </div>
+
+        <!-- <div class="column">
+            <div class="articleBox">
+                <img src="img/chakras21.jpg" class="articlePictures" id="chakras" alt="chakras">
+            </div>
+            <article class="fw-bold fs-3 articleTitles">Crystals And Chakras</article>
+            <article class="fs-5 articleNotes">Chakras, known as wheel in Sanskrit, are energy centers within the body but did you know you could use ...</article>
+        </div> -->
+    </div>
+</div>
+
+
+</div>
+
+
+<footer class="container-fluid bg-warning">
+    <p class="text-center footerText"> © 2023 Crystallite The Way</p>
+</footer>
+
+<script type="application/javascript" src="/client.js"></script>
+</body>
+</html>

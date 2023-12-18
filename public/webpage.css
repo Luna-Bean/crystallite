@@ -1,0 +1,256 @@
+ /* #tm-top-bar{
+    display: block;
+    justify-content:flex-start ;
+    margin: 0 0 0 0;
+}
+
+div.container>div{
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0 0;
+} */
+
+/* div.container>div.row>section{
+    display: flex;
+    align-items: center;
+    padding:10px;
+} */
+
+.top-left-container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logoImage{
+    width:50px;
+    margin-right:10px;
+}
+.logoText{
+    margin: 0;
+    font-size: 16px;
+}
+/* .mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+div.container>div.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left:-15px;
+} */
+.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link { padding: 50px 35px; }
+.tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link { padding: 30px 35px; }
+.tm-top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 120px;
+    background: white;
+}
+.tm-top-bar-bg { height: 119px; }
+.navbar-brand {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.navbar-expand-lg.narbar-light{
+margin: 0 0 0 -14rem;
+padding: 0 0;
+}
+a.navbar-brand.mr-auto{
+    padding: 5px;
+    cursor: pointer;
+}
+img{
+    /* vertical-align: left; */
+    vertical-align: middle;
+    border-style: none;
+    width:10%;
+    margin: 0 0 0 0 ;
+}
+
+.navbar{
+    width:100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+display:inline-block;
+line-height: inherit;
+padding: 0.3125rem, 0;
+white-space: nowrap;
+font-size: 1.8rem;
+font-weight: 700;
+}
+
+div#mainNav{
+padding: 0 0 0 10rem ;
+margin: 0 0 0 2rem ;
+
+}
+
+
+.tm-position-relative{
+    position: relative;
+}
+.tm-section{
+    min-height: 515px;
+}
+#tm-section-1 {	
+	background-image: url('../img/amethyst.jpg');	
+	height: 515px;
+}
+.tm-bg-img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tm-section-2{
+    background-color: #ee5057;
+    padding-top: 49px;
+    position: relative;
+}
+
+.tm-section-down-arrow{
+    position:absolute;
+    top:0px;
+    width: 100%;
+    height: 100px;
+}
+svg:not(:root){
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+section>ul.dayPlanetStone{
+    background-color: #ee5057;
+} 
+
+li.nav-item{
+    border-left:1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+li{
+    list-style: none;
+}
+
+
+div.row.text-center{
+    margin-left: 144px;
+    margin-top: 164px;
+
+}
+
+
+
+div.form-group.tm-form-element.tm-form-element-100>label{
+    margin: 0 2rem 1rem -2rem;
+
+}
+
+#searchForm>#dayOfWeekInput{
+    margin:0 0 1rem 0;
+    border-color: #ee5057;
+}
+.submitButton{
+border-radius: 47%;
+background-color: #ee5057;
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+h2,p,label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tm-pb-4{
+    padding-bottom: 100px;
+}
+.tm-pt-5{
+    padding-top:60px;
+}
+
+#tm-section-6{
+    background-image: url("../img/colorful-665704_640.jpg");
+    background-position: bottom;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    width:100%;
+    height: 40px;
+}
+
+
+
+
+
+/* section.stoneCharacteristics{
+    width: 100%;
+    height:50px;
+}
+section.stoneCharacteristics>p{
+    width:100%;
+    height: 50px;
+}
+
+section.goBackToMainPage{
+    width:100%;
+    height: auto;
+    margin: 16rem 0;
+} */
+
+/* Media Queries */
+
+@media(min-width: 992px){
+    .container{max-width:960px;}
+    }
+    
+    @media screen and (max-width: 991px) {
+        .tm-top-bar.active, .tm-top-bar, .tm-top-bar-bg { height: 65px; }
+        .tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link,
+        .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
+            padding: 12px 15px;
+        }
+    }
+    
+    @media(min-width: 768px){
+    .container{max-width: 720px;}
+    }
+    
+    @media(min-width: 576px){
+    .container{max-width:540px;}
+    }
+    
+    @media screen and (max-width: 524px){
+        .tm-section-pad {
+            padding: 25px 15px;
+            }
+        }
