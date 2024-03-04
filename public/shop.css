@@ -1,0 +1,55 @@
+
+.tm-section-2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn{
+    background-color: aliceblue;
+}
+
+.collapsed {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsed:hover {
+    background-color: #f1f1f1
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  .active, .filter:hover {
+    background-color: #f1f1f1
+  }
+.col.text-center{
+    display: inline-flex;
+    justify-content: space-around;
+}
+section.picture{
+    background-color: aliceblue;
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+section.picture>img{
+    height: auto;
+    width:150px;
+    margin-left: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+

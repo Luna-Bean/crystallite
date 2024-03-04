@@ -287,11 +287,16 @@ div.container-bottom>.secondBox{
     display: flex;
     width:100%;
     justify-content:flex-end;
+    /* border: solid 5px black; */
+}
+
+div.container-bottom>.secondBox>.column{
+   margin-left: 1rem;  
 }
 
 div.container-bottom>.secondBox>.column1{
-   margin-left: 3rem;  
-}
+    margin-left: 3rem;  
+ }
 
 
 .articlePictures{
@@ -306,11 +311,11 @@ div.container-bottom>.secondBox>.column1{
 
 article.articleTitles{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     cursor: pointer;
 }
 article.articleNotes{
-    margin: 2rem 7rem 4rem 0;
+    margin: 2rem 7rem 4rem 7rem;
     width:80%;
     padding-right: 7rem;
 }
@@ -366,6 +371,16 @@ section.goBackToMainPage{
             margin: 18px 21px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: small;
+        }
+
+        div.container-bottom>.secondBox>.column1{
+            border:#ee5057 solid 2px;
+        }
+        div.container-bottom>.secondBox>.column{
+            border: #ee5057 solid 2px;
+        }
+        img.articlePictures{
+            max-width: 400px;
         }
     }
 
@@ -432,6 +447,9 @@ section.goBackToMainPage{
     }
     
 @media screen and (max-width: 768px){
+    .navbar-expand-lg.narbar-light{
+        margin:0;
+    }
    section.imageSection{
     border-style:none;
     width:47%;
@@ -441,6 +459,20 @@ section.goBackToMainPage{
     h1.userResultsTitle{
         margin:2rem 0 1rem 4rem;
     }
+    section.resultsContainer>ul.dayPlanetStone{
+        margin-top: 7.5rem;
+    }
+    div.container-bottom>.secondBox>.column1{
+        max-width: 760px;
+    }
+    div.container-bottom>.secondBox>.column{
+        max-width: 760px;
+    }
+
+    article.articleTitles{
+        margin: 0 0 0 0;
+    }
+   
 }
 
     @media screen and (max-width: 1024px){

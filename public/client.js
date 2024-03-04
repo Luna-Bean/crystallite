@@ -10,3 +10,8 @@ function search() {
 function mainPage() {
     window.location.href = `/`;
 }
+
+function shopPage(){
+    console.log('shoppage is being called')
+    window.location.href ='/shop'
+}

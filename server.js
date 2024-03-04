@@ -28,6 +28,7 @@ app.use(express.json())
 const clientJS = require('./public/client');
 const day = require('./model/modelschema');
 const { auto } = require('@cloudinary/url-gen/qualifiers/quality');
+const { error } = require('console');
 
 
 
@@ -78,6 +79,19 @@ app.get('/', (request , response) => {
 
     //route to go to when user enters day with just server side code
 
+
+
+      // route to shop page
+  app.get('/shop',(request, response) => {
+    try{
+    response.render('shop');
+    }
+    catch(error){
+      console.log(error)
+   }
+  })
+
+
   app.get('/:userResults?', async(request, response, ) => { 
 
     const userInput = request.params.userResults.toLowerCase();
@@ -121,7 +135,8 @@ app.get('/', (request , response) => {
   });
 
 
-        
+       
+
 
 app.listen(process.env.PORT, () => {
 

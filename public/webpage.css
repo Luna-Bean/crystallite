@@ -175,6 +175,7 @@ div.row.text-center{
 
 div.form-group.tm-form-element.tm-form-element-100>label{
     margin: 0 2rem 1rem -2rem;
+    font-size: 1.7rem;
 
 }
 
@@ -238,6 +239,9 @@ section.goBackToMainPage{
         .tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link,
         .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
             padding: 12px 15px;
+        }
+        .navbar-expand-lg.narbar-light{
+            display: contents;
         }
     }
     
